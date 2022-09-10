@@ -1,6 +1,6 @@
 import { OrderStatus } from '../contracts';
 import { Messaging, Persistency } from '../infra';
-import { ShoppingCart } from '../shopping-cart';
+import { ShoppingCart } from '.';
 
 export class Order {
   private _status: OrderStatus = 'open';
