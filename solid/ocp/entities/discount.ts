@@ -11,6 +11,6 @@ export class TenPercenteDiscount extends Discount {
   protected discount = 0.1
 }
 
-export class FiftyPerceteDiscont {
+export class FiftyPerceteDiscont extends Discount {
   protected discount = 0.5
 }

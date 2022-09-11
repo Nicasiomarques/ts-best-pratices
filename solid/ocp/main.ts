@@ -1,8 +1,8 @@
-import { ShoppingCart, Order, FiftyPerceteDiscont } from './entities';
+import { ShoppingCart, Order, NoDiscount } from './entities';
 import { Messaging, Persistency } from './infra';
 
-const fiftyPerceteDiscont = new FiftyPerceteDiscont()
-const shoppingCart = new ShoppingCart(fiftyPerceteDiscont);
+const noDiscount = new NoDiscount();
+const shoppingCart = new ShoppingCart(noDiscount);
 const persistency = new Persistency();
 const messaging = new Messaging();
 const order = new Order(shoppingCart, messaging, persistency);

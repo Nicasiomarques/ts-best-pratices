@@ -1,1 +1,1 @@
-import './solid/srp/main';
+import './solid/ocp/main';
