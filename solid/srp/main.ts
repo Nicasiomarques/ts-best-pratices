@@ -2,9 +2,7 @@ import { ShoppingCart, Order } from './entities';
 import { Messaging, Persistency } from './infra';
 
 const shoppingCart = new ShoppingCart();
-const persistency = new Persistency();
-const messaging = new Messaging();
-const order = new Order(shoppingCart, messaging, persistency);
+const order = new Order(shoppingCart, new Messaging(), new Persistency());
 
 shoppingCart.addItem({ name: 'arroz', price: 129 });
 shoppingCart.addItem({ name: 'papa', price: 432 });
